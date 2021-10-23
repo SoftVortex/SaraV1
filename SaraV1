@@ -1,0 +1,202 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local ComingSoon = Instance.new("TextButton")
+local ComingSoon_2 = Instance.new("TextButton")
+local ComingSoon_3 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local ComingSoon_4 = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
+local X = Instance.new("TextButton")
+local mm2 = Instance.new("TextButton")
+local mm2_2 = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.291931093, 0, 0.236477986, 0)
+Frame.Size = UDim2.new(0, 506, 0, 305)
+Frame.Visible = false
+
+Home.Name = "Home"
+Home.Parent = Frame
+Home.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+Home.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Home.Position = UDim2.new(0, 0, 0.180327863, 0)
+Home.Size = UDim2.new(0, 199, 0, 50)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextSize = 14.000
+
+ComingSoon.Name = "Coming Soon..."
+ComingSoon.Parent = Frame
+ComingSoon.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+ComingSoon.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ComingSoon.Position = UDim2.new(0, 0, 0.508196712, 0)
+ComingSoon.Size = UDim2.new(0, 199, 0, 50)
+ComingSoon.Font = Enum.Font.SourceSansBold
+ComingSoon.Text = "Coming Soon..."
+ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon.TextSize = 14.000
+
+ComingSoon_2.Name = "Coming Soon..."
+ComingSoon_2.Parent = Frame
+ComingSoon_2.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+ComingSoon_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ComingSoon_2.Position = UDim2.new(0, 0, 0.672131121, 0)
+ComingSoon_2.Size = UDim2.new(0, 199, 0, 50)
+ComingSoon_2.Font = Enum.Font.SourceSansBold
+ComingSoon_2.Text = "Coming Soon..."
+ComingSoon_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_2.TextSize = 14.000
+
+ComingSoon_3.Name = "Coming Soon..."
+ComingSoon_3.Parent = Frame
+ComingSoon_3.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+ComingSoon_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ComingSoon_3.Position = UDim2.new(0, 0, 0.344262302, 0)
+ComingSoon_3.Size = UDim2.new(0, 199, 0, 50)
+ComingSoon_3.Font = Enum.Font.SourceSansBold
+ComingSoon_3.Text = "Coming Soon..."
+ComingSoon_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_3.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(18, 2, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.Position = UDim2.new(-0.00197628466, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 55)
+TextLabel.Font = Enum.Font.Merriweather
+TextLabel.LineHeight = 0.610
+TextLabel.Text = "Made By Venus#3333\\n"
+TextLabel.TextColor3 = Color3.fromRGB(234, 0, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+
+ComingSoon_4.Name = "Coming Soon..."
+ComingSoon_4.Parent = Frame
+ComingSoon_4.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+ComingSoon_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ComingSoon_4.Position = UDim2.new(0, 0, 0.83606559, 0)
+ComingSoon_4.Size = UDim2.new(0, 199, 0, 50)
+ComingSoon_4.Font = Enum.Font.SourceSansBold
+ComingSoon_4.Text = "Coming Soon..."
+ComingSoon_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_4.TextSize = 14.000
+
+infyield.Name = "inf yield"
+infyield.Parent = Frame
+infyield.BackgroundColor3 = Color3.fromRGB(6, 0, 94)
+infyield.BorderColor3 = Color3.fromRGB(255, 0, 0)
+infyield.Position = UDim2.new(0.486166, 0, 0.0754098371, 0)
+infyield.Size = UDim2.new(0, 200, 0, 50)
+infyield.Font = Enum.Font.Jura
+infyield.Text = "inf yield"
+infyield.TextColor3 = Color3.fromRGB(255, 0, 0)
+infyield.TextSize = 14.000
+infyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderColor3 = Color3.fromRGB(255, 0, 0)
+X.Position = UDim2.new(0.958498001, 0, 0, 0)
+X.Size = UDim2.new(0, 21, 0, 23)
+X.Font = Enum.Font.Arcade
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 14.000
+
+mm2.Name = "mm2"
+mm2.Parent = Frame
+mm2.BackgroundColor3 = Color3.fromRGB(6, 0, 94)
+mm2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+mm2.Position = UDim2.new(0.486166, 0, 0.344262302, 0)
+mm2.Size = UDim2.new(0, 200, 0, 50)
+mm2.Font = Enum.Font.Jura
+mm2.Text = "mm2"
+mm2.TextColor3 = Color3.fromRGB(255, 0, 0)
+mm2.TextSize = 14.000
+mm2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+mm2_2.Name = "mm2"
+mm2_2.Parent = Frame
+mm2_2.BackgroundColor3 = Color3.fromRGB(6, 0, 94)
+mm2_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+mm2_2.Position = UDim2.new(0.486166, 0, 0.672131181, 0)
+mm2_2.Size = UDim2.new(0, 200, 0, 50)
+mm2_2.Font = Enum.Font.Jura
+mm2_2.Text = "Owl Hub"
+mm2_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+mm2_2.TextSize = 14.000
+mm2_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(66, 9, 74)
+Open.BorderColor3 = Color3.fromRGB(101, 0, 127)
+Open.Position = UDim2.new(0, 0, 0.677987397, 0)
+Open.Size = UDim2.new(0, 33, 0, 34)
+Open.Font = Enum.Font.GothamBold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 2, 234)
+Open.TextSize = 14.000
+
+-- Scripts:
+
+local function YBKTLTA_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(YBKTLTA_fake_script)()
+local function GHKFKWT_fake_script() -- Frame.localscript :p 
+	local script = Instance.new('LocalScript', Frame)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(GHKFKWT_fake_script)()
+local function MARRCIT_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Frame -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(MARRCIT_fake_script)()
+local function ZKPK_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local Frame = script.Parent.Parent.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+coroutine.wrap(ZKPK_fake_script)()
